@@ -4,12 +4,14 @@ import { RegisterRestaurant } from './routes/register-restaurant'
 import { sendAuthLink } from './routes/send-auth-link'
 import { authenticateFromLink } from './routes/authenticate-from-link'
 import { getProfile } from './routes/get-profile'
+import { getManagedRestaurant } from './routes/get-managed-restaurant'
 
 const app = new Elysia()
   .use(RegisterRestaurant)
   .use(sendAuthLink)
   .use(authenticateFromLink)
   .use(getProfile)
+  .use(getManagedRestaurant)
 
 app.listen(3333, () =>
   console.log('🚀 HTTP server running: http://localhost:3333'),
