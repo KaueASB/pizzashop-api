@@ -43,6 +43,13 @@
       "when": 1709043038962,
       "tag": "0005_serious_falcon",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1709053998821,
+      "tag": "0006_goofy_scream",
+      "breakpoints": true
     }
   ]
 }
