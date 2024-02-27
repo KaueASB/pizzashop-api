@@ -5,8 +5,10 @@ import { sendAuthLink } from './routes/send-auth-link'
 import { authenticateFromLink } from './routes/authenticate-from-link'
 import { getProfile } from './routes/get-profile'
 import { getManagedRestaurant } from './routes/get-managed-restaurant'
+import swagger from '@elysiajs/swagger'
 
 const app = new Elysia()
+  .use(swagger())
   .use(RegisterRestaurant)
   .use(sendAuthLink)
   .use(authenticateFromLink)
