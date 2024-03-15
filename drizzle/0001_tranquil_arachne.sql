@@ -4,5 +4,4 @@ CREATE TABLE IF NOT EXISTS "restaurants" (
 	"description" text NOT NULL,
 	"created_at" timestamp DEFAULT now() NOT NULL,
 	"updated_at" timestamp DEFAULT now() NOT NULL,
-	CONSTRAINT "restaurants_description_unique" UNIQUE("description")
 );

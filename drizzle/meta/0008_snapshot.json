@@ -1,6 +1,6 @@
 {
-  "id": "6c863f55-bf64-4369-8bb8-a2bc7831037d",
-  "prevId": "76c2d10a-bbc5-4cda-b6b1-fcd4e35fcba6",
+  "id": "67c9495a-491e-4f1a-ab1f-3e5806f16ddc",
+  "prevId": "6c863f55-bf64-4369-8bb8-a2bc7831037d",
   "version": "5",
   "dialect": "pg",
   "tables": {
@@ -171,7 +171,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
+          "onDelete": "cascade",
           "onUpdate": "no action"
         }
       },
@@ -389,7 +389,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "set null",
+          "onDelete": "set default",
           "onUpdate": "no action"
         }
       },

@@ -17,13 +17,13 @@ export const users = pgTable('users', {
   updatedAt: timestamp('updated_at').notNull().defaultNow(),
 })
 
-export const userRelations = relations(users, ({ one, many }) => {
+export const usersRelations = relations(users, ({ one, many }) => {
   return {
     managedRestaurant: one(restaurants, {
       fields: [users.id],
       references: [restaurants.managerId],
       relationName: 'managed_restaurant',
     }),
-    order: many(orders),
+    orders: many(orders),
   }
 })

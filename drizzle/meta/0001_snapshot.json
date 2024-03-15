@@ -107,15 +107,7 @@
       "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
-      "uniqueConstraints": {
-        "restaurants_description_unique": {
-          "name": "restaurants_description_unique",
-          "nullsNotDistinct": false,
-          "columns": [
-            "description"
-          ]
-        }
-      }
+      "uniqueConstraints": {}
     }
   },
   "enums": {
