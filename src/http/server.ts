@@ -12,6 +12,7 @@ import { approveOrder } from './routes/approve-order'
 import { dispatchOrder } from './routes/dispatch-order'
 import { deliverOrder } from './routes/deliver-order'
 import { cancelOrder } from './routes/cancel-order'
+import { getOrders } from './routes/get-orders'
 
 const app = new Elysia()
   .use(swagger())
@@ -25,12 +26,16 @@ const app = new Elysia()
   .use(dispatchOrder)
   .use(deliverOrder)
   .use(cancelOrder)
+  .use(getOrders)
   .onError(({ error, code, set }) => {
     switch (code) {
       case 'VALIDATION': {
         set.status = error.status
 
         return error.toResponse()
+      }
+      case 'NOT_FOUND': {
+        return new Response(null, { status: 404 })
       }
       default: {
         console.error(error)
