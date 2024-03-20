@@ -14,6 +14,7 @@ import { deliverOrder } from './routes/deliver-order'
 import { cancelOrder } from './routes/cancel-order'
 import { getOrders } from './routes/get-orders'
 import { getMonthRevenue } from './routes/get-month-receipt'
+import { getDayOrdersAmount } from './routes/get-day-orders-amount'
 
 const app = new Elysia()
   .use(swagger())
@@ -29,6 +30,7 @@ const app = new Elysia()
   .use(cancelOrder)
   .use(getOrders)
   .use(getMonthRevenue)
+  .use(getDayOrdersAmount)
   .onError(({ error, code, set }) => {
     switch (code) {
       case 'VALIDATION': {
