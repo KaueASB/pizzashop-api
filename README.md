@@ -23,14 +23,14 @@ bun dev
 > O **resumo** dos recursos está listado abaixo. Todos os recursos contêm testes *E2E.
 > Obs: Testes E2E em desenvolvimento.
 
-[x] deve ser capaz de registrar um novo restaurante
-[x] deve ser possível entrar como gerente de restaurante
-[x] deve ser capaz de se registrar como um novo cliente
-[ ] deve ser capaz de criar um pedido para o restaurante
-[x] deve ser capaz de gerenciar o menu do restaurante
-[ ] deve ser capaz de gerenciar as avaliações do restaurante
-[ ] deve poder deixar uma avaliação
-[x] deve ser capaz de gerenciar os pedidos do restaurante
-[ ] deve ser capaz de atualizar o perfil público do restaurante
-[ ] deve poder abrir/fechar o restaurante
-[x] deve ser capaz de listar métricas do restaurante
+- [x] deve ser capaz de registrar um novo restaurante
+- [x] deve ser possível entrar como gerente de restaurante
+- [x] deve ser capaz de se registrar como um novo cliente
+- [ ] deve ser capaz de criar um pedido para o restaurante
+- [x] deve ser capaz de gerenciar o menu do restaurante
+- [ ] deve ser capaz de gerenciar as avaliações do restaurante
+- [ ] deve poder deixar uma avaliação
+- [x] deve ser capaz de gerenciar os pedidos do restaurante
+- [ ] deve ser capaz de atualizar o perfil público do restaurante
+- [ ] deve poder abrir/fechar o restaurante
+- [x] deve ser capaz de listar métricas do restaurante
